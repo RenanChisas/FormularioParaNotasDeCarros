@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body  {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgb(253, 253, 253);
+}
+
+main {
+    margin: 2rem;
+    display: flex;
+  
+}
+
+select {
+  width: 100%;
+  padding: 0.3rem;
+  border: 1px solid black;
+  margin-top: 0.3rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.inputForm {
+    padding: 0.3rem 0rem;
+}
+.inputForm input[type="text"]{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    outline: none;
+}
+  .linha-vertical {
+    border-left: 1px solid black;
+    height: 40rem;
+
+  }
+
+section{
+  margin: 0 3rem;
+}
+
+h1 {
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3 {
+    margin-top: 0.5rem;
+}
+.checkboxDisplay {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 0.4rem 0.76rem;
+  margin-top: 1rem;
+}
+
+
+input {
+    cursor: pointer;
+}
+
+
+.Resultado {
+
+    width: 50%;
+}
+
+.Formulario {
+    width: 50%;
+
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+}

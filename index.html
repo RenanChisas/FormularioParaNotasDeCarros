@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário Para Notas</h1>
+    </header>
+    <main>
+        <section class="Formulario">
+            <h2> Formulário Do Serviço</h2>
+            <h3>Informações Do Veiculo:</h3>
+            <div class="inputForm">
+                <label for="veiculo">Veiculo:</label><br>
+                <input type="text" id="veiculo" name="veiculo" placeholder="Digite o veiculo">
+            </div>
+            <div class="inputForm">
+                <label for="placa">Placa:</label><br>
+                <input minlength="7" maxlength="7" type="text" id="placa" name="placa" placeholder="Digite a placa">
+            </div>
+            <div class="inputForm">
+                <label for="cor">Cor:</label><br>
+                <input type="text" id="cor" name="cor" placeholder="Digite a cor">
+            </div>
+            <div class="inputForm">
+                <label for="ano">Ano:</label><br>
+                <input type="text" id="ano" name="ano" placeholder="digite o ano">
+            </div>
+            <h3>Serviço Prestado:</h2>
+             <div class="inputForm">
+                <label for="servicoprestado">Serviço:</label><br>
+                <select name="servicoPrestado" id="servicoprestado">
+                    <option value="FUNILARIA E PINTURA">FUNILARIA E PINTURA</option>
+                    <option value="FUNILARIA">FUNILARIA</option>
+                    <option value="PINTURA">PINTURA</option>
+                    <option value="REPINTURA">REPINTURA</option>
+                </select>
+            </div>
+            <div class="checkboxDisplay">
+                
+                <label><input type="checkbox" name="serviço" value="CAPÔ"> CAPÔ</label>
+                <label><input type="checkbox" name="serviço" value="TETO"> TETO</label>
+                <label><input type="checkbox" name="serviço" value="PORTA DIANTEIRA ESQUERDA"> PORTA DIANTEIRA ESQUERDA</label>
+                <label><input type="checkbox" name="serviço" value="PORTA DIANTEIRA DIREITA"> PORTA DIANTEIRA DIREITA</label>
+                <label><input type="checkbox" name="serviço" value="PORTA TRASEIRA ESQUERDA"> PORTA TRASEIRA ESQUERDA</label>
+                <label><input type="checkbox" name="serviço" value="PORTA TRASEIRA DIREITA"> PORTA TRASEIRA DIREITA</label>
+                <label><input type="checkbox" name="serviço" value="PARA-LAMA DIANTEIRO ESQUERDO"> PARA-LAMA DIANTEIRO ESQUERDO</label>
+                <label><input type="checkbox" name="serviço" value="PARA-LAMA DIANTEIRO DIREITO"> PARA-LAMA DIANTEIRO DIREITO</label>
+                <label><input type="checkbox" name="serviço" value="PARA-LAMA TRASEIRO ESQUERDO"> PARA-LAMA TRASEIRO ESQUERDO</label>
+                <label><input type="checkbox" name="serviço" value="PARA-LAMA TRASEIRO DIREITO"> PARA-LAMA TRASEIRO DIREITO</label>
+                <label><input type="checkbox" name="serviço" value="PORTA-MALAS"> PORTA-MALAS</label>
+                <label><input type="checkbox" name="serviço" value="PARACHOQUE DIANTEIRO"> PARACHOQUE DIANTEIRO</label>
+                <label><input type="checkbox" name="serviço" value="PARACHOQUE TRASEIRO"> PARACHOQUE TRASEIRO</label>
+                <label><input type="checkbox" name="serviço" value="COLUNA CENTRAL"> COLUNA CENTRAL</label>
+                <label><input type="checkbox" name="serviço" value="SOLEIRA"> SOLEIRA</label>
+            </div>
+        </section>
+        <div class="linha-vertical"></div>
+        <section class="Resultado">
+            <h2> Informações Do Serviço</h2>
+            <h3>Resultado:</h3>
+            <p id="resultado" style="white-space: pre-wrap;">
+VEICULO: 
+PLACA:  
+COR: 
+ANO: 
+SERVIÇO DE FUNILARIA E PINTURA 
+            </p>
+            <button id="btncop">📋 Copiar Texto</button>
+        </section>
+        
+    </main>
+    <script src="script.js"> </script>
+</body>
+</html>
